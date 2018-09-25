@@ -1,0 +1,249 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Elei&ccedil;&otilde;es 2018&#13;
+APCF - OAB</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="0p4idfid72uhnp5hvhkk1n788a">Elei&ccedil;&otilde;es 2018&#13;
+APCF - OAB</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="eleicoes_2018_APCF_OAB_files/images/Elei%C3%A7%C3%B5es 2018 APCF - OAB.jpg"></div>
+<h2 class="topic">
+<a name="5jb1vvc55qgqanroat7amp45o1">Problemas em Potencial</a>
+</h2>
+<h3 class="topic">
+<a name="03ko3e401b1cer1i9nu2rqc94t">&nbsp;1 - Substitui&ccedil;&atilde;o de software em urnas</a>
+</h3>
+<div class="notesContainer">
+<p>Extra&iacute;do de "(In)seguran&ccedil;a do voto eletr&ocirc;nico no Brasil / Vulnerabilidades no software da urna eletr&ocirc;nica brasileira"</p>
+<p></p>
+<p>Em particular, este relat&oacute;rio versa sobre os principais problemas de projeto e/ou implementa&ccedil;&atilde;o de mecanismos de seguran&ccedil;a detectados no software da urna eletr&ocirc;nica:</p>
+<p></p>
+<p>- Cifra&ccedil;&atilde;o inadequada: a mesma chave criptogr&aacute;fica &eacute; utilizada para cifrar as m&iacute;dias de todas as urnas eletr&ocirc;nicas. Utilizando a analogia cl&aacute;ssica de um cadeado como abstra&ccedil;&atilde;o de t&eacute;cnica criptogr&aacute;fica, isto &eacute; equivalente a proteger meio milh&atilde;o de cadeados com uma mesma chave, visto ser este o n&uacute;mero aproximado de equipamentos em opera-&ccedil;&atilde;o. Al&eacute;m disso, a chave que decifra todas as m&iacute;dias &eacute; armazenada &agrave;s claras na por&ccedil;&atilde;o decifrada das m&iacute;dias. Utilizando a mesma analogia, isto equivale a esconder a chave do cadeado embaixo do tapete e confiar no segredo dessa localiza&ccedil;&atilde;o como fonte de seguran&ccedil;a;</p>
+<p></p>
+<p>- Verifica&ccedil;&atilde;o insuficiente de integridade: o software da urna eletr&ocirc;nica verifica sua pr&oacute;pria integridade durante o processo de inicializa&ccedil;&atilde;o, mas toda a informa&ccedil;&atilde;o necess&aacute;ria para subverter esse mecanismo encontra-se armazenada nas pr&oacute;prias urnas eletr&ocirc;nicas, com dificuldades distintas para um ataque, dependendo da presen&ccedil;a do m&oacute;dulo de seguran&ccedil;a em hardware. Em urnas sem este recurso, o problema de verifica&ccedil;&atilde;o &eacute; reduzido a si pr&oacute;prio, sem fonte externa de confian&ccedil;a. Nesse caso, "software auto-verific&aacute;vel'' por assinatura digital equivale a confiar a autenticidade de uma assinatura de punho em um documento apenas ao testemunho do pr&oacute;prio ``autor'', que, assim, pode se passar por quem quiser. &Eacute; importante ressaltar ainda que uma assinatura aut&ecirc;ntica apenas atesta o processamento do conte&uacute;do assinado em algum ponto no tempo e espa&ccedil;o no qual tamb&eacute;m estava presente a chave de assinatura. Mesmo que os mecanismos de verifica&ccedil;&atilde;o de integridade n&atilde;o sejam contornados e funcionem a contento, ainda n&atilde;o h&aacute; qualquer garantia de que o conte&uacute;do do documento &eacute; de fato o desejado, visto que no caso o mesmo (software) tem extens&atilde;o da ordem de milh&otilde;es de linhas (de c&oacute;digo). Caso o software possua vulnerabilidades (como as descritas neste documento), a verifica&ccedil;&atilde;o de integridade (quando n&atilde;o subvertida) tem o efeito colateral de garantir que as mesmas vulnerabilidades estar&atilde;o presentes em todas as urnas. A vers&atilde;o do c&oacute;digo observada pelos autores apresentava ainda como desativada a verifica&ccedil;&atilde;o de integridade de parte do software contido na urna, evidenciando as limita&ccedil;&otilde;es intr&iacute;nsecas da t&eacute;cnica.</p>
+</div>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/textos/urnas-b2.htm#3o" name="4d7iic4lklosr8rhhk8pe3osap">&nbsp;2 - Fraude dos Mes&aacute;rios</a>
+</h3>
+<h2 class="topic">
+<a name="6k8heq11tb7kpb09ni4fnevcti">Proposta de Aplicativo</a>
+</h2>
+<h3 class="topic">
+<a name="3m1j4dnbanqln73ht7tquu9vku">&nbsp;1 - Objetivos:&#13;
+... fiscalizar por amostragem os boletins de urna&#13;
+... auxiliar o trabalho de fiscais partid&aacute;rios na verifica&ccedil;&atilde;o de integridade de software embarcado em urnas eletr&ocirc;nicas</a>
+</h3>
+<h3 class="topic">
+<a name="4m4gadsj2sn4gm9nqlabbm31oh">&nbsp;2 - Perfis de uso:&#13;
+... Eleitor&#13;
+... Fiscal autorizado (Res. 23.550)</a>
+</h3>
+<h3 class="topic">
+<a name="4so8iqiq33i2ueb342aroe1u5j">&nbsp;3 - Funcionamento:&#13;
+... Aplicativo &eacute; instalado em smartphone de usu&aacute;rio e obt&eacute;m permiss&otilde;es necess&aacute;rias para acessar c&acirc;mera, GPS e Internet&#13;
+... Durante o per&iacute;odo de carga das urnas (por volta de uma semana antes das elei&ccedil;&otilde;es), fiscais autorizados (Res. 23.550 - vide abaixo) podem usar fun&ccedil;&atilde;o que lista resumos digitais esperados em urnas eletr&ocirc;nicas, verifica&ccedil;&atilde;o esta realizada nas depend&ecirc;ncias da Justi&ccedil;a Eleitoral. Se requerida e deferida por autoridade competente, esta verifica&ccedil;&atilde;o poder&aacute; ser feita ap&oacute;s a vota&ccedil;&atilde;o.&#13;
+... &Agrave;s 17h do dia da elei&ccedil;&atilde;o, qualquer usu&aacute;rio comparece &agrave;s se&ccedil;&otilde;es eleitorais de interesse e digitaliza boletins de urna rec&eacute;m-impressos por presidentes. Durante o processo de digitaliza&ccedil;&atilde;o (ou em um instante posterior, caso haja indisponibilidade de conex&atilde;o &agrave; internet), aplicativo envia boletim de urna para servidor, onde dados s&atilde;o armazenados e processados.</a>
+</h3>
+<h3 class="topic">
+<a name="6933q9d3utkelcc47aj8843hg2">&nbsp;4 - Plataformas Android e iOS</a>
+</h3>
+<h2 class="topic">
+<a name="3clhi2e5edqqbpkvnnvb9716rj">Solu&ccedil;&otilde;es Existentes</a>
+</h2>
+<h3 class="topic">
+<a href="https://play.google.com/store/apps/details?id=com.marcocarvalho.Totalizador_2018" name="69j7ihv0rs6qo0ndlusb94j2es">&nbsp;Totaliza&ccedil;&atilde;o Paralela das Elei&ccedil;&otilde;es 2018</a>
+</h3>
+<div class="notesContainer">
+<p>Aplicativo de fiscaliza&ccedil;&atilde;o da Totaliza&ccedil;&atilde;o dos Votos na elei&ccedil;&atilde;o de 2018 no Brasil.</p>
+<p></p>
+<p>O aplicativo l&ecirc; o QrCode impresso nos Boletins de Urna (BU) publicados nas Se&ccedil;&otilde;es Eleitorais ap&oacute;s o encerramento da vota&ccedil;&atilde;o oficial &agrave;s 17 horas. Os BU lidos s&atilde;o transmitidos e gravados em um servidor para uma totaliza&ccedil;&atilde;o paralela. </p>
+<p></p>
+<p>IMPORTANTE: este aplicativo n&atilde;o serve para fiscalizar a integridade do software das urnas eletr&ocirc;nicas que gera os BU.</p>
+<p></p>
+<p>O TSE s&oacute; disponibilizar&aacute; os votos por se&ccedil;&atilde;o 72h ap&oacute;s a divulga&ccedil;&atilde;o oficial do resultado. S&oacute; ent&atilde;o poderemos conferir se cada BU enviado &eacute; o mesmo que foi totalizado pelo TSE. Nosso Intuito &eacute; fiscalizar a totaliza&ccedil;&atilde;o por amostragem!</p>
+<p></p>
+<p>Aplicativo desenvolvido pelo CMIND - Comit&ecirc; Multidisciplinar Independente.</p>
+<p></p>
+<p></p>
+<p>ATEN&Ccedil;&Atilde;O: PERMITA O ACESSO A TODOS OS DISPOSITVOS DO SEU CELULAR QUE O APLICATIVO SOLICITAR!!! Problemas como n&atilde;o encontrar o scanner acontece porque o usu&aacute;rio n&atilde;o permitiu acesso ao dispositivo c&acirc;mera!</p>
+<p></p>
+<p>Como usar: Voc&ecirc; dever&aacute; estar presente em algum local de vota&ccedil;&atilde;o ANTES das 17 h quando ser&atilde;o publicados os BU de cada Se&ccedil;&atilde;o Eleitoral. Voc&ecirc; deve chegar ao local de vota&ccedil;&atilde;o antes do encerramento &agrave;s 17h para poder permanecer l&aacute; dentro.</p>
+<p></p>
+<p>Cada BU consiste num impresso com os votos de cada candidato e com um ou mais QrCode ao final. Por for&ccedil;a de lei, o presidente da mesa deve pendurar uma c&oacute;pia do BU na porta da Se&ccedil;&atilde;o Eleitoral para que todos os eleitores tenham acesso.</p>
+<p>Os QrCodes dos BU de cada Se&ccedil;&atilde;o Eleitoral dever&aacute; ser lido pelo aplicativo, um a um sequencialmente, e depois ser&aacute; enviado para o totalizador. Fa&ccedil;a isso para todas as Se&ccedil;&otilde;es Eleitorais de onde voc&ecirc; estiver.</p>
+<p></p>
+<p>Como o sistema eleitoral brasileiro n&atilde;o permite uma auditoria eficaz da etapa de apura&ccedil;&atilde;o dos votos e gera&ccedil;&atilde;o de cada BU pelas urnas eletr&ocirc;nicas, j&aacute; que estas n&atilde;o produzem o Voto Impresso Confer&iacute;vel pelo Eleitor, este aplicativo do CMIND visa facultar a fiscaliza&ccedil;&atilde;o apenas na etapa de transmiss&atilde;o e totaliza&ccedil;&atilde;o dos BU &mdash; &uacute;nica etapa do processo eleitoral brasileiro que pode ser auditada de forma confi&aacute;vel como se explica a seguir.</p>
+<p></p>
+<p>O processo eletr&ocirc;nico de vota&ccedil;&atilde;o brasileiro &eacute; composto por tr&ecirc;s etapas:</p>
+<p></p>
+<p>1. Prepara&ccedil;&atilde;o:</p>
+<p>Abrange o per&iacute;odo de an&aacute;lise dos c&oacute;digos-fontes nas dependencias do TSE em Bras&iacute;lia seis meses antes da elei&ccedil;&atilde;o e vai at&eacute; a prepara&ccedil;&atilde;o e carga das urnas, por volta de uma semana antes da elei&ccedil;&atilde;o. Infelizmente, os procedimentos liberados pelo TSE n&atilde;o permitem uma fiscaliza&ccedil;&atilde;o eficaz, direta e independente, que determine que o software apresentado em Bras&iacute;lia &eacute; de fato o mesmo que est&aacute; carregado nas urnas eletr&ocirc;nicas.</p>
+<p></p>
+<p>2. Apura&ccedil;&atilde;o:</p>
+<p>Essa etapa abrange tudo que acontece no dia da elei&ccedil;&atilde;o entre a emiss&atilde;o da zer&eacute;sima &agrave;s 7h e a emiss&atilde;o do BU &agrave;s 17 h. (Se o software das urnas tiver sido fraudado, o BU apenas materializa a fraude).</p>
+<p></p>
+<p>3. Totaliza&ccedil;&atilde;o:</p>
+<p>Essa etapa engloba a transmiss&atilde;o dos BU para os computadores da Administra&ccedil;&atilde;o Eleitoral e sua posterior totaliza&ccedil;&atilde;o at&eacute; a publica&ccedil;&atilde;o dos resultados oficiais. &Eacute; a &uacute;nica etapa do processo eleitoral eletr&ocirc;nico que pode ser auditada de forma direta e independente e &eacute; para isso que este aplicativo foi desenvolvido.</p>
+<p></p>
+<p>&Eacute; importante sempre ter em mente que se algo malicioso acontecer nas etapas 1 e 2, as regras restritivas de auditoria impostas pelo TSE s&atilde;o insuficientes para identificar eventuais fraudes. </p>
+<p></p>
+<p>O sistema eleitoral brasileiro tem uma particularidade &iacute;mpar: &eacute; a administradora que calcula e publica o resultado eleitoral a mesma entidade que tamb&eacute;m determina as regras de fiscaliza&ccedil;&atilde;o do seu trabalho. Em outras palavras, a auditoria eleitoral &eacute; cerceada e restringida pelo auditado.</p>
+<p></p>
+<p>Exer&ccedil;a sua cidadania, fiscalize a &uacute;nica fase acess&iacute;vel aos eleitores e candidatos, e continue exigindo a prova f&iacute;sica do voto (Voto Impresso Confer&iacute;vel pelo Eleitor), como ocorre em todos os demais pa&iacute;ses que usam urnas eletr&ocirc;nicas</p>
+<p></p>
+<p></p>
+<p>CMIND:</p>
+<p>https://pt.wikipedia.org/wiki/Comit&ecirc;_Multidisciplinar_Independente</p>
+</div>
+<h3 class="topic">
+<a name="480vghues9i4jv177ilpvvr2oo">&nbsp;&nbsp;- App desenvolvido por membro do CMIND</a>
+</h3>
+<h3 class="topic">
+<a name="2nesje3taia2nl69mf4484vnqj">&nbsp;&nbsp;- Objetivo: fiscalizar por amostragem o resultado em urnas cujos boletins foram digitalizados (s&oacute; poder&aacute; ser feito ap&oacute;s 72h com a divulga&ccedil;&atilde;o oficial de resultados se&ccedil;&otilde;es pelo TSE)</a>
+</h3>
+<h3 class="topic">
+<a name="3aot4ffh3etnc43tft8mci11j2">&nbsp;&nbsp;- Auxilia a fiscaliza&ccedil;&atilde;o apenas na etapa de transmiss&atilde;o e totaliza&ccedil;&atilde;o dos BU</a>
+</h3>
+<h3 class="topic">
+<a name="6d82l9q5l03p4o9tqu2p7407nh">&nbsp;&nbsp;- Permite ler Boletim de Urna impresso em QR Code&#13;
+e enviar para posterior an&aacute;lise e totaliza&ccedil;&atilde;o</a>
+</h3>
+<h3 class="topic">
+<a name="2tpjge9nh4e57d12p9tsg82ia2">&nbsp;&nbsp;- Entre 5.000 e 10.000 instala&ccedil;&otilde;es, apenas 4 usos de teste em 24/09/2018&#13;
+(Curitiba/PR, Macei&oacute;/AL, Piren&oacute;polis/GO e Belo Horizonte/MG - eu)</a>
+</h3>
+<h3 class="topic">
+<a name="6hmie4b4gfseb1ugcqsgsfvl4s">&nbsp;&nbsp;- Uso simples, interface espartana</a>
+</h3>
+<h3 class="topic">
+<a href="https://play.google.com/store/apps/details?id=br.jus.tse.BoletimNaMao" name="7q9s79p0soki4cj3accl9oeqtl">&nbsp;Boletim na M&atilde;o</a>
+</h3>
+<h3 class="topic">
+<a name="0hhpe47nocd7ruah0g37doekrj">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
+</h3>
+<h3 class="topic">
+<a name="2rqrm0bt5ta6h40qu9mood22hq">&nbsp;&nbsp;- Permite leitura da imagem (QRcode) contida no final do boletim impresso pela urna da se&ccedil;&atilde;o eleitoral, possibilitando ao eleitor obter e visualizar uma c&oacute;pia digital dos boletins de urna em seu celular ou tablet</a>
+</h3>
+<h3 class="topic">
+<a name="5ikdg6jfcg5pfau6qo1g9ofq34">&nbsp;&nbsp;- Entre 100 e 500 instala&ccedil;&otilde;es</a>
+</h3>
+<h3 class="topic">
+<a href="https://play.google.com/store/apps/details?id=br.jus.trees.pardalmobile" name="3pscckvuskp758ak109783b6el">&nbsp;Pardal</a>
+</h3>
+<h3 class="topic">
+<a name="2eibknh3ov9btg1dkdv7r2s81b">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
+</h3>
+<h3 class="topic">
+<a name="7mm0gff4l4o753vl83j80hu1m6">&nbsp;&nbsp;- Permite o envio de den&uacute;ncias com ind&iacute;cios de pr&aacute;ticas indevidas ou ilegais no &acirc;mbito da Justi&ccedil;a Eleitoral.</a>
+</h3>
+<h3 class="topic">
+<a name="5n8lo9r8ni7bhl2r9lkcj36ui1">&nbsp;&nbsp;- Den&uacute;ncias: Propaganda Eleitoral, Uso de M&aacute;quina P&uacute;blica, Compra de Votos, Crimes Eleitorais, Doa&ccedil;&otilde;es e Gastos Eleitorais e Outros</a>
+</h3>
+<h3 class="topic">
+<a name="7q2831fnlj37pek96ro9849ksr">&nbsp;&nbsp;- Mais de 100.000 instala&ccedil;&otilde;es</a>
+</h3>
+<h3 class="topic">
+<a href="https://play.google.com/store/apps/details?id=br.jus.tse.resultados" name="1icffnth3abrtfqsfdq204eu5b">&nbsp;Resultados</a>
+</h3>
+<h3 class="topic">
+<a name="0t46ak04ne40heclk1m7hfl65i">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
+</h3>
+<h3 class="topic">
+<a name="3c4ol8nuroaq1h9e10g8cc3u7i">&nbsp;&nbsp;- Aplicativo oficial da Justi&ccedil;a Eleitoral para acompanhar o resultado das elei&ccedil;&otilde;es.</a>
+</h3>
+<h3 class="topic">
+<a name="2ft7eiqfpf0tun3645v994ua2d">&nbsp;&nbsp;- Mais de 1.000.000 instala&ccedil;&otilde;es</a>
+</h3>
+<h2 class="topic">
+<a name="304ssglk8fm11154o7kesmmph1">Recursos Auxiliares</a>
+</h2>
+<h3 class="topic">
+<a href="https://pt.wikipedia.org/wiki/Comit%C3%AA_Multidisciplinar_Independente" name="6sutrf1qdd8vftnc6jk8hje5s7">&nbsp;CMIND</a>
+</h3>
+<h3 class="topic">
+<a name="5862pp87umfi7ajhst8rfuh6ue">&nbsp;&nbsp;Relat&oacute;rios</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/textos//CMind-1-Brasil-2010.htm" name="4l7vlbmk17vf9d61j1arl0fi49">&nbsp;&nbsp;&nbsp;- 1&ordm; Relat&oacute;rio CMind sobre o Sistema&#13;
+Brasileiro de Vota&ccedil;&atilde;o Eletr&ocirc;nica - 2010</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/textos/CMind-2-Argentina-2011.htm" name="0l95qt3c82vd1dupjek7f8hgm6">&nbsp;&nbsp;&nbsp;- 2&ordm; Relat&oacute;rio CMind sobre o Equipamento&#13;
+Argentino de Vota&ccedil;&atilde;o usado em 2011</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/textos/CMind-3-Equador-2014.htm" name="6nvkgvabqp68tinak9vcbtin8t">&nbsp;&nbsp;&nbsp;- 3&ordm; Relat&oacute;rio CMind sobre Elei&ccedil;&atilde;o&#13;
+Eletr&ocirc;nica no Equador em 2014</a>
+</h3>
+<h3 class="topic">
+<a name="6q3c81i9370876qa7qlb2qjk8l">&nbsp;TSE</a>
+</h3>
+<h3 class="topic">
+<a name="1qpeiq8mv66ltaghmjl9geus56">&nbsp;&nbsp;Documentos T&eacute;cnicos</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.tse.jus.br/eleicoes/eleicoes-2018/qr-code-no-boletim-de-urna-manual-para-criacao-de-aplicativos-de-leitura" name="3rt38971nfg3684ij3ent948gk">&nbsp;&nbsp;&nbsp;- QR Code no Boletim de Urna: manual para cria&ccedil;&atilde;o de aplicativos de leitura</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/hash/resumos-digitais-hashes-das-eleicoes-2018-1o-turno" name="504evkt5kjdjr9kkvr93d39dtk">&nbsp;&nbsp;&nbsp;- Resumos digitais (hashes) das Elei&ccedil;&otilde;es 2018 &ndash; 1&ordm; e 2&ordm; turnos</a>
+</h3>
+<div class="notesContainer">
+<p>Os resumos digitais (hashes) t&ecirc;m rela&ccedil;&atilde;o direta com a seguran&ccedil;a do processo eleitoral e s&atilde;o gerados a cada elei&ccedil;&atilde;o, na cerim&ocirc;nia de lacra&ccedil;&atilde;o dos sistemas, realizada no TSE. Eles possibilitam aos partidos pol&iacute;ticos e ao Minist&eacute;rio P&uacute;blico verificar se os arquivos encontrados em qualquer urna do pa&iacute;s correspondem aos arquivos lacrados no TSE.</p>
+</div>
+<h3 class="topic">
+<a name="2io9ajre0j6jjv830ed87khol7">&nbsp;&nbsp;Resolu&ccedil;&otilde;es</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.tse.jus.br/legislacao-tse/res/2017/RES235542017.html" name="3df9moaacmr1vpn1u603n92f6u">&nbsp;&nbsp;&nbsp;RESOLU&Ccedil;&Atilde;O N&ordm; 23.554, DE 18 DE DEZEMBRO DE 2017</a>
+</h3>
+<h3 class="topic">
+<a name="09ssr0vfisq5a7v4fpf8v9p23n">&nbsp;&nbsp;&nbsp;&nbsp;- Disp&otilde;e sobre os atos preparat&oacute;rios para as Elei&ccedil;&otilde;es 2018.</a>
+</h3>
+<h3 class="topic">
+<a name="0vu17j574lepvo4ueg5snlcj47">&nbsp;&nbsp;&nbsp;&nbsp;- Em seu Art. 180, trata do conte&uacute;do e da impress&atilde;o de boletins de urna</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.tse.jus.br/legislacao-tse/res/2017/RES235502017.html" name="2ebhi2b1jk2aloiff0nth50kdo">&nbsp;&nbsp;&nbsp;RESOLU&Ccedil;&Atilde;O N&ordm; 23.550, DE 18 DE DEZEMBRO DE 2017</a>
+</h3>
+<h3 class="topic">
+<a name="1ds5krnl6lv5p5n1rm4id9kj7n">&nbsp;&nbsp;&nbsp;&nbsp;- Disp&otilde;e sobre a cerim&ocirc;nia de assinatura digital e fiscaliza&ccedil;&atilde;o do sistema eletr&ocirc;nico de vota&ccedil;&atilde;o, do registro digital do voto, das auditorias de funcionamento das urnas eletr&ocirc;nicas e dos procedimentos de seguran&ccedil;a dos dados dos sistemas eleitorais.</a>
+</h3>
+<h3 class="topic">
+<a name="061u5joaim4shhsjhgv5asdo5m">&nbsp;&nbsp;&nbsp;&nbsp;- Em seu Art. 1&ordm; diz que &eacute; garantido aos partidos pol&iacute;ticos e coliga&ccedil;&otilde;es, &agrave; OAB, &agrave; PF e a in&uacute;meros outros atores o acesso antecipado aos programas de computados desenvolvidos pelo TSE para fins de fiscaliza&ccedil;&atilde;o e auditoria em elei&ccedil;&otilde;es.</a>
+</h3>
+<h3 class="topic">
+<a name="5h1354tur862j08ua5ga7m4iaa">&nbsp;&nbsp;&nbsp;&nbsp;- Em seu Art. 32, trata das verifica&ccedil;&otilde;es de resumos digitais (hash) de aplicativos usados na vota&ccedil;&atilde;o eletr&ocirc;nica. A Verifica&ccedil;&atilde;o Pr&eacute;-P&oacute;s Elei&ccedil;&atilde;o (VPP) permite checar os sistemas instalados na urna eletr&ocirc;nica, enquanto o Verificador de Autentica&ccedil;&atilde;o de Programas (VAP) serve para conferir os sistemas instalados em microcomputadores.</a>
+</h3>
+<h3 class="topic">
+<a name="2c8ou1mcvp0iuu7d5kbui6ii90">&nbsp;&nbsp;&nbsp;&nbsp;- Em seus Art. 35 e 36, trata dos per&iacute;odos e momentos em que a verifica&ccedil;&atilde;o da assinatura digital e dos resumos digitais (hash) poder&aacute; ser realizada.</a>
+</h3>
+<h3 class="topic">
+<a name="17dbium945naqhpusv31ivn17p">&nbsp;Artigos Cient&iacute;ficos&#13;
+e Relat&oacute;rios</a>
+</h3>
+<h3 class="topic">
+<a href="https://sites.google.com/site/dfaranha/pubs/aranha-karam-miranda-scarel-12-pt" name="5kcgfakr72corspo51m0htb7h2">&nbsp;&nbsp;- (In)seguran&ccedil;a do voto eletr&ocirc;nico no Brasil / Vulnerabilidades no software da urna eletr&ocirc;nica brasileira</a>
+</h3>
+<h3 class="topic">
+<a href="eleicoes_2018_APCF_OAB_files/%C2%A0%C2%A0%C2%A013775-1442-5-30.pdf" name="01sep4iua41mgqea8stkdsijm0">&nbsp;&nbsp;&nbsp;13775-1442-5-30.pdf</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/arquivos/RelatorioAuditoriaEleicao2014-PSDB.pdf" name="442318qiubdhb09p492b60qah2">&nbsp;&nbsp;- Relat&oacute;rio de Auditoria Especial no Sistema Eleitoral 2014 - PSDB</a>
+</h3>
+<h3 class="topic">
+<a href="eleicoes_2018_APCF_OAB_files/%C2%A0%C2%A0%C2%A0RelatorioAuditoriaEleicao2014-PSDB.pdf" name="4brnj2cflcdcq7oi04cpk7kh6i">&nbsp;&nbsp;&nbsp;RelatorioAuditoriaEleicao2014-PSDB.pdf</a>
+</h3>
+<h3 class="topic">
+<a name="5bud8j8lhfdlj378u40acp3kuf">&nbsp;Not&iacute;cias</a>
+</h3>
+<h3 class="topic">
+<a href="http://www.brunazo.eng.br/voto-e/" name="12l181v0e345oscnlta097hkjk">&nbsp;&nbsp;- F&oacute;rum do Voto Eletr&ocirc;nico</a>
+</h3>
+</body>
+</html>
