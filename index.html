@@ -12,28 +12,26 @@ APCF - OAB</title>
 APCF - OAB</a>
 </h1>
 <div align="center" class="globalOverview">
-<img src="eleicoes_2018_APCF_OAB_files/images/Elei%C3%A7%C3%B5es 2018 APCF - OAB.jpg"></div>
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Elei%C3%A7%C3%B5es 2018 APCF - OAB.jpg"></div>
 <h2 class="topic">
 <a name="5jb1vvc55qgqanroat7amp45o1">Problemas em Potencial</a>
 </h2>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Problemas em Potencial.jpg"></div>
 <h3 class="topic">
 <a name="03ko3e401b1cer1i9nu2rqc94t">&nbsp;1 - Substitui&ccedil;&atilde;o de software em urnas</a>
 </h3>
-<div class="notesContainer">
-<p>Extra&iacute;do de "(In)seguran&ccedil;a do voto eletr&ocirc;nico no Brasil / Vulnerabilidades no software da urna eletr&ocirc;nica brasileira"</p>
-<p></p>
-<p>Em particular, este relat&oacute;rio versa sobre os principais problemas de projeto e/ou implementa&ccedil;&atilde;o de mecanismos de seguran&ccedil;a detectados no software da urna eletr&ocirc;nica:</p>
-<p></p>
-<p>- Cifra&ccedil;&atilde;o inadequada: a mesma chave criptogr&aacute;fica &eacute; utilizada para cifrar as m&iacute;dias de todas as urnas eletr&ocirc;nicas. Utilizando a analogia cl&aacute;ssica de um cadeado como abstra&ccedil;&atilde;o de t&eacute;cnica criptogr&aacute;fica, isto &eacute; equivalente a proteger meio milh&atilde;o de cadeados com uma mesma chave, visto ser este o n&uacute;mero aproximado de equipamentos em opera-&ccedil;&atilde;o. Al&eacute;m disso, a chave que decifra todas as m&iacute;dias &eacute; armazenada &agrave;s claras na por&ccedil;&atilde;o decifrada das m&iacute;dias. Utilizando a mesma analogia, isto equivale a esconder a chave do cadeado embaixo do tapete e confiar no segredo dessa localiza&ccedil;&atilde;o como fonte de seguran&ccedil;a;</p>
-<p></p>
-<p>- Verifica&ccedil;&atilde;o insuficiente de integridade: o software da urna eletr&ocirc;nica verifica sua pr&oacute;pria integridade durante o processo de inicializa&ccedil;&atilde;o, mas toda a informa&ccedil;&atilde;o necess&aacute;ria para subverter esse mecanismo encontra-se armazenada nas pr&oacute;prias urnas eletr&ocirc;nicas, com dificuldades distintas para um ataque, dependendo da presen&ccedil;a do m&oacute;dulo de seguran&ccedil;a em hardware. Em urnas sem este recurso, o problema de verifica&ccedil;&atilde;o &eacute; reduzido a si pr&oacute;prio, sem fonte externa de confian&ccedil;a. Nesse caso, "software auto-verific&aacute;vel'' por assinatura digital equivale a confiar a autenticidade de uma assinatura de punho em um documento apenas ao testemunho do pr&oacute;prio ``autor'', que, assim, pode se passar por quem quiser. &Eacute; importante ressaltar ainda que uma assinatura aut&ecirc;ntica apenas atesta o processamento do conte&uacute;do assinado em algum ponto no tempo e espa&ccedil;o no qual tamb&eacute;m estava presente a chave de assinatura. Mesmo que os mecanismos de verifica&ccedil;&atilde;o de integridade n&atilde;o sejam contornados e funcionem a contento, ainda n&atilde;o h&aacute; qualquer garantia de que o conte&uacute;do do documento &eacute; de fato o desejado, visto que no caso o mesmo (software) tem extens&atilde;o da ordem de milh&otilde;es de linhas (de c&oacute;digo). Caso o software possua vulnerabilidades (como as descritas neste documento), a verifica&ccedil;&atilde;o de integridade (quando n&atilde;o subvertida) tem o efeito colateral de garantir que as mesmas vulnerabilidades estar&atilde;o presentes em todas as urnas. A vers&atilde;o do c&oacute;digo observada pelos autores apresentava ainda como desativada a verifica&ccedil;&atilde;o de integridade de parte do software contido na urna, evidenciando as limita&ccedil;&otilde;es intr&iacute;nsecas da t&eacute;cnica.</p>
-</div>
 <h3 class="topic">
 <a href="http://www.brunazo.eng.br/voto-e/textos/urnas-b2.htm#3o" name="4d7iic4lklosr8rhhk8pe3osap">&nbsp;2 - Fraude dos Mes&aacute;rios</a>
+</h3>
+<h3 class="topic">
+<a name="5dnksrg51e5o3mqfbbm5pcds1s">&nbsp;3 - Totaliza&ccedil;&atilde;o de votos em Boletins de Urna (transmiss&atilde;o e apura&ccedil;&atilde;o)</a>
 </h3>
 <h2 class="topic">
 <a name="6k8heq11tb7kpb09ni4fnevcti">Proposta de Aplicativo</a>
 </h2>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Proposta de Aplicativo.jpg"></div>
 <h3 class="topic">
 <a name="3m1j4dnbanqln73ht7tquu9vku">&nbsp;1 - Objetivos:&#13;
 ... fiscalizar por amostragem os boletins de urna&#13;
@@ -51,56 +49,208 @@ APCF - OAB</a>
 ... &Agrave;s 17h do dia da elei&ccedil;&atilde;o, qualquer usu&aacute;rio comparece &agrave;s se&ccedil;&otilde;es eleitorais de interesse e digitaliza boletins de urna rec&eacute;m-impressos por presidentes. Durante o processo de digitaliza&ccedil;&atilde;o (ou em um instante posterior, caso haja indisponibilidade de conex&atilde;o &agrave; internet), aplicativo envia boletim de urna para servidor, onde dados s&atilde;o armazenados e processados.</a>
 </h3>
 <h3 class="topic">
-<a name="6933q9d3utkelcc47aj8843hg2">&nbsp;4 - Plataformas Android e iOS</a>
+<a name="6933q9d3utkelcc47aj8843hg2">&nbsp;4 - Requisitos:&#13;
+... Plataformas Android e iOS&#13;
+... Uso offline (leitura de QRCode) e online (transmiss&atilde;o, resultados...)</a>
+</h3>
+<h3 class="topic">
+<a name="0vcbgueln1oahtl51rfer6260b">&nbsp;5 - Arquitetura e Tecnologia</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/5 - Arquitetura e Tecnologia.jpg"></div>
+<h3 class="topic">
+<a name="5m563kod6ecg6jb8l1h1e2kh4c">&nbsp;&nbsp;ionic + Cordova (frontend)</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/ionic + Cordova (frontend).jpg"></div>
+<h3 class="topic">
+<a name="1nqph92t4mussbencdieukeer4">&nbsp;&nbsp;&nbsp;Scanner QR Code</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Scanner QR Code.jpg"></div>
+<h3 class="topic">
+<a href="https://ionicframework.com/docs/native/qr-scanner/" name="7ggn4tm7ngdjl9gnm03b3hm9uq">&nbsp;&nbsp;&nbsp;&nbsp;M&oacute;dulo QR Scanner</a>
+</h3>
+<h3 class="topic">
+<a href="https://www.djamware.com/post/59bb219f80aca768e4d2b13e/example-of-ionic-3-angular-4-cordova-barcode-and-qr-code-scanner" name="78r9jg67njk4nig6u6taimd642">&nbsp;&nbsp;&nbsp;&nbsp;Tutorial QR Scanner ionic 3 Angular 4</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/didinj/ionic3-cordova-barcode-qrcode-scanner" name="2j3gf6vpantruirp392lh4o05l">&nbsp;&nbsp;&nbsp;&nbsp;C&oacute;digo fonte de exemplo</a>
+</h3>
+<h3 class="topic">
+<a name="34dr5m4pr7nkq5m80t54nc6n6l">&nbsp;&nbsp;&nbsp;Template aplicativo</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Template aplicativo.jpg"></div>
+<h3 class="topic">
+<a href="https://code.tutsplus.com/articles/best-ionic-app-templates--cms-28563" name="79q9l3necb2j14jf0b3vjjgl7f">&nbsp;&nbsp;&nbsp;&nbsp;15 Ready-Made Ionic 3 App Templates</a>
+</h3>
+<h3 class="topic">
+<a href="https://codecanyon.net/item/ionic-2-app-angular-2-ionic-2-typescript-i18n-full-app/19216199" name="4fphbpgmfdrcc8rc41altthsim">&nbsp;&nbsp;&nbsp;&nbsp;Template Ionic 3 App</a>
+</h3>
+<h3 class="topic">
+<a href="https://codecanyon.net/item/ionic-3-ui-themetemplate-app-material-design-blue-light/20234423?s_rank=6" name="4jhcvoec12l7g5f3a2qrkqr73k">&nbsp;&nbsp;&nbsp;&nbsp;Template Ionic 3 Blue Light</a>
+</h3>
+<h3 class="topic">
+<a href="https://codecanyon.net/item/ionium-2-ionic-multipurpose-app-with-ionic-3/20465103?s_rank=14" name="743ttan6o86qckndq730c0iuf2">&nbsp;&nbsp;&nbsp;&nbsp;Template Ionium 2</a>
+</h3>
+<h3 class="topic">
+<a href="https://codecanyon.net/item/barebone-ionic-2-personal-edition-the-swiss-army-knife-of-ionic-2/18928976?s_rank=22" name="15hu7phjljdjkg0iotmgviil9v">&nbsp;&nbsp;&nbsp;&nbsp;Template Ionic 3 Toolkit</a>
+</h3>
+<h3 class="topic">
+<a href="https://codecanyon.net/item/firetask-ionic-2-and-firebase-3-full-demo-application/18223835" name="117epns1rlhdod0u2qcuhridt4">&nbsp;&nbsp;&nbsp;&nbsp;Template Firetask</a>
+</h3>
+<h3 class="topic">
+<a href="https://csform.com/top-10-free-ionic-3-templates/" name="3k00aps6ihmh95p6l2h91ja5vh">&nbsp;&nbsp;&nbsp;&nbsp;Top 10 Free Ionic 3 Templates</a>
+</h3>
+<h3 class="topic">
+<a href="https://ionicthemes.com/product/ion2fullapp-full-ionic2-app-template-elite-version" name="3mrncgdhjevjtijei4lsrc5gvb">&nbsp;&nbsp;&nbsp;&nbsp;Ionic Themes - Ion2FullApp ELITE</a>
+</h3>
+<h3 class="topic">
+<a name="6c4pvua37ngcrc5vgotp9jlq26">&nbsp;&nbsp;&nbsp;Projetos Github</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Projetos Github.jpg"></div>
+<h3 class="topic">
+<a href="https://github.com/daniwidodo/Ionic-3-Wordpress-REST-Client" name="5c1r2gba76tob9mt208m55uuks">&nbsp;&nbsp;&nbsp;&nbsp;daniwidodo / Ionic-3-Wordpress-REST-Client</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/daniwidodo/Ionic-4-Wordpress-REST" name="533tm43qc5p1bt4j4l5cpr8to1">&nbsp;&nbsp;&nbsp;&nbsp;daniwidodo / Ionic-4-Wordpress-REST</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/codyburleson/ionic-ng-wp-client" name="6lh4n4cjrpao5eo8q8agejhcfi">&nbsp;&nbsp;&nbsp;&nbsp;codyburleson / ionic-ng-wp-client</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/angular-studio/ionic-wordpress" name="0i5ojuscj01u195htgpbj3b4r6">&nbsp;&nbsp;&nbsp;&nbsp;angular-studio / ionic-wordpress</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/ionicthemes/ionic3-wordpress-integration" name="2oij3hdtj2fu8bmuihv929ts9e">&nbsp;&nbsp;&nbsp;&nbsp;ionicthemes / ionic3-wordpress-integration</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/wordpress-clients/hybrid" name="7rpdngefag5mkisuic9qsrjni3">&nbsp;&nbsp;&nbsp;&nbsp;wordpress-clients / hybrid</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/search?o=desc&amp;q=ionic+wordpress&amp;s=updated&amp;type=Repositories" name="09vtbdkjr390p2bd0cs6onl2ac">&nbsp;&nbsp;&nbsp;&nbsp;Outros</a>
+</h3>
+<h3 class="topic">
+<a name="6vtc1bpnse18anr9m20qnii9tu">&nbsp;&nbsp;ionic PWA (frontend alternativo)</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/ionic PWA (frontend alternativo).jpg"></div>
+<h3 class="topic">
+<a name="716jfou5eo77al36g03qorfdit">&nbsp;&nbsp;&nbsp;Artigos</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Artigos.jpg"></div>
+<h3 class="topic">
+<a href="https://ionicframework.com/pwa" name="2tlj350m8muqr5ttj8dvbk99tr">&nbsp;&nbsp;&nbsp;&nbsp;P&aacute;gina ionic</a>
+</h3>
+<h3 class="topic">
+<a href="https://blog.ionicframework.com/what-is-a-progressive-web-app/" name="0umlr7asd7ld90mrou5ko6e277">&nbsp;&nbsp;&nbsp;&nbsp;What are Progressive Web Apps?</a>
+</h3>
+<h3 class="topic">
+<a href="https://javebratt.com/pwa-faq/" name="4ndgj5qu6k5fggej395de964hl">&nbsp;&nbsp;&nbsp;&nbsp;PWA FAQ</a>
+</h3>
+<h3 class="topic">
+<a href="https://www.joshmorony.com/the-bare-necessities-progressive-web-apps-in-ionic/" name="0dl5862umalntcretb1nv35rc0">&nbsp;&nbsp;&nbsp;&nbsp;The Bare Necessities: Progressive Web Apps in Ionic</a>
+</h3>
+<h3 class="topic">
+<a href="https://medium.com/@firt/progressive-web-apps-on-ios-are-here-d00430dee3a7" name="4r33vrisp68k0ket46s4hpuhhg">&nbsp;&nbsp;&nbsp;&nbsp;Progressive Web Apps on iOS are here</a>
+</h3>
+<h3 class="topic">
+<a href="https://www.raymondcamden.com/2016/03/22/the-cordova-browser-platform/" name="1e3jomef3pl2t8uub0v14u63mv">&nbsp;&nbsp;&nbsp;&nbsp;The Cordova browser platform</a>
+</h3>
+<h3 class="topic">
+<a name="1urt44f0kvlfhgktf9a7ijg0u3">&nbsp;&nbsp;&nbsp;Projetos Github</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Projetos Github 2.jpg"></div>
+<h3 class="topic">
+<a href="https://github.com/doppelganger9/sample-qrcode-pwa-ionic" name="2t5l6mcj4r4qc3moosijkvkmpe">&nbsp;&nbsp;&nbsp;&nbsp;doppelganger9 / sample-qrcode-pwa-ionic</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/bitpay/cordova-plugin-qrscanner#electron-or-nwjs-usage-without-cordova-browser" name="5ks5lu7r4fkul34rqssisp4iv2">&nbsp;&nbsp;&nbsp;&nbsp;bitpay / cordova-plugin-qrscanner</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/code-kotis/barcode-scanner" name="4ivmkjmn10pj8q3pjopjq14ge7">&nbsp;&nbsp;&nbsp;&nbsp;code-kotis / barcode-scanner</a>
+</h3>
+<h3 class="topic">
+<a name="6f3jtsa0mul6t34n82s0g71com">&nbsp;&nbsp;&nbsp;Templates</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Templates.jpg"></div>
+<h3 class="topic">
+<a href="https://pwathemes.com/" name="6rhs8g3u6oroif798os8crkkv2">&nbsp;&nbsp;&nbsp;&nbsp;PWA Themes</a>
+</h3>
+<h3 class="topic">
+<a href="https://pwathemes.com/progressive-web-app-themes/extrude.html" name="1o5383llotsdmn5vlj3b82npdm">&nbsp;&nbsp;&nbsp;&nbsp;EXTRUDE Theme (ionic 1+WP)</a>
+</h3>
+<h3 class="topic">
+<a href="https://pwathemes.com/progressive-web-app-themes/pure.html" name="4o0338as4g47uk9m423vjtpu6o">&nbsp;&nbsp;&nbsp;&nbsp;PURE Theme (ionic)</a>
+</h3>
+<h3 class="topic">
+<a href="https://pwathemes.com/progressive-web-app-themes/obliq.html" name="2tvnub2qtkp312a5o9ov4dokkj">&nbsp;&nbsp;&nbsp;&nbsp;OBLIQ Theme</a>
+</h3>
+<h3 class="topic">
+<a name="0sdhvlm3g9efgl289slc9hn4m2">&nbsp;&nbsp;Firebase (backend)</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Firebase (backend).jpg"></div>
+<h3 class="topic">
+<a href="https://firebase.google.com/pricing/" name="7anmlt4dv67k608qgupuulebsp">&nbsp;&nbsp;&nbsp;Plano Spark (gratuito) ou Flame (US$ 25/m&ecirc;s)</a>
+</h3>
+<h3 class="topic">
+<a href="https://www.firebase.com/docs/rest/quickstart.html" name="5fpksnoluth6619t75rf17qgjd">&nbsp;&nbsp;&nbsp;API REST para acesso a dados</a>
+</h3>
+<h3 class="topic">
+<a name="1211d7ri4hmhdl8p6g73e246qa">&nbsp;&nbsp;&nbsp;Maioria dos templates funciona com Firebase</a>
+</h3>
+<h3 class="topic">
+<a href="https://br.wordpress.com/" name="1bl0g606shpvia31nil6lcellp">&nbsp;&nbsp;Wordpress (not&iacute;cias)</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Wordpress (not%C3%ADcias).jpg"></div>
+<h3 class="topic">
+<a name="2j4l9gadlta54u094rhggeljhp">&nbsp;&nbsp;&nbsp;Template site</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Template site.jpg"></div>
+<h3 class="topic">
+<a href="https://themeforest.net/item/appdev-mobile-app-showcase-wordpress-theme/5307269?s_rank=3" name="6adiev03daddqt49t17m3qbpan">&nbsp;&nbsp;&nbsp;&nbsp;Template Appdev - Mobile App Showcase WordPress Theme</a>
+</h3>
+<h3 class="topic">
+<a href="https://themeforest.net/item/app-on-responsive-app-landing-wordpress-theme/12072702?s_rank=2" name="08thlbqk7tl3m3ftdt3a35jpot">&nbsp;&nbsp;&nbsp;&nbsp;Template App on - Responsive App Landing WordPress Theme</a>
+</h3>
+<h3 class="topic">
+<a href="https://themeforest.net/item/stabapp-mobile-app-showcase-wordpress-theme/19514254?s_rank=1" name="53j1e2scd92j40aqeuk3pbcm4p">&nbsp;&nbsp;&nbsp;&nbsp;Template StabApp - Mobile App Showcase Wordpress Theme</a>
+</h3>
+<h3 class="topic">
+<a href="https://wordpress.com/theme/edin/mundaosemfim.wordpress.com" name="549j0ssp7s0dqo75tr982u12s3">&nbsp;&nbsp;&nbsp;&nbsp;Wordpress Edin</a>
+</h3>
+<h3 class="topic">
+<a name="71cbfo2orop7842ad3bugcvun0">&nbsp;&nbsp;Redash (analytics)</a>
+</h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Redash (analytics).jpg"></div>
+<h3 class="topic">
+<a href="https://redash.io/pricing/" name="3i3np9kv23g5g0g0m6g2kan9ff">&nbsp;&nbsp;&nbsp;Hospedagem em nuvem a partir de US$ 49/m&ecirc;s</a>
+</h3>
+<h3 class="topic">
+<a href="https://github.com/getredash/redash/" name="02b3ptf3nvrc3a0qshn7heio31">&nbsp;&nbsp;&nbsp;C&oacute;digo fonte aberto</a>
+</h3>
+<h3 class="topic">
+<a href="https://redash.io/data-sources/json" name="7dfh4g9kl0elae34in8pq2r2fk">&nbsp;&nbsp;&nbsp;JSON como fonte de dados</a>
 </h3>
 <h2 class="topic">
 <a name="3clhi2e5edqqbpkvnnvb9716rj">Solu&ccedil;&otilde;es Existentes</a>
 </h2>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Solu%C3%A7%C3%B5es Existentes.jpg"></div>
 <h3 class="topic">
 <a href="https://play.google.com/store/apps/details?id=com.marcocarvalho.Totalizador_2018" name="69j7ihv0rs6qo0ndlusb94j2es">&nbsp;Totaliza&ccedil;&atilde;o Paralela das Elei&ccedil;&otilde;es 2018</a>
 </h3>
-<div class="notesContainer">
-<p>Aplicativo de fiscaliza&ccedil;&atilde;o da Totaliza&ccedil;&atilde;o dos Votos na elei&ccedil;&atilde;o de 2018 no Brasil.</p>
-<p></p>
-<p>O aplicativo l&ecirc; o QrCode impresso nos Boletins de Urna (BU) publicados nas Se&ccedil;&otilde;es Eleitorais ap&oacute;s o encerramento da vota&ccedil;&atilde;o oficial &agrave;s 17 horas. Os BU lidos s&atilde;o transmitidos e gravados em um servidor para uma totaliza&ccedil;&atilde;o paralela. </p>
-<p></p>
-<p>IMPORTANTE: este aplicativo n&atilde;o serve para fiscalizar a integridade do software das urnas eletr&ocirc;nicas que gera os BU.</p>
-<p></p>
-<p>O TSE s&oacute; disponibilizar&aacute; os votos por se&ccedil;&atilde;o 72h ap&oacute;s a divulga&ccedil;&atilde;o oficial do resultado. S&oacute; ent&atilde;o poderemos conferir se cada BU enviado &eacute; o mesmo que foi totalizado pelo TSE. Nosso Intuito &eacute; fiscalizar a totaliza&ccedil;&atilde;o por amostragem!</p>
-<p></p>
-<p>Aplicativo desenvolvido pelo CMIND - Comit&ecirc; Multidisciplinar Independente.</p>
-<p></p>
-<p></p>
-<p>ATEN&Ccedil;&Atilde;O: PERMITA O ACESSO A TODOS OS DISPOSITVOS DO SEU CELULAR QUE O APLICATIVO SOLICITAR!!! Problemas como n&atilde;o encontrar o scanner acontece porque o usu&aacute;rio n&atilde;o permitiu acesso ao dispositivo c&acirc;mera!</p>
-<p></p>
-<p>Como usar: Voc&ecirc; dever&aacute; estar presente em algum local de vota&ccedil;&atilde;o ANTES das 17 h quando ser&atilde;o publicados os BU de cada Se&ccedil;&atilde;o Eleitoral. Voc&ecirc; deve chegar ao local de vota&ccedil;&atilde;o antes do encerramento &agrave;s 17h para poder permanecer l&aacute; dentro.</p>
-<p></p>
-<p>Cada BU consiste num impresso com os votos de cada candidato e com um ou mais QrCode ao final. Por for&ccedil;a de lei, o presidente da mesa deve pendurar uma c&oacute;pia do BU na porta da Se&ccedil;&atilde;o Eleitoral para que todos os eleitores tenham acesso.</p>
-<p>Os QrCodes dos BU de cada Se&ccedil;&atilde;o Eleitoral dever&aacute; ser lido pelo aplicativo, um a um sequencialmente, e depois ser&aacute; enviado para o totalizador. Fa&ccedil;a isso para todas as Se&ccedil;&otilde;es Eleitorais de onde voc&ecirc; estiver.</p>
-<p></p>
-<p>Como o sistema eleitoral brasileiro n&atilde;o permite uma auditoria eficaz da etapa de apura&ccedil;&atilde;o dos votos e gera&ccedil;&atilde;o de cada BU pelas urnas eletr&ocirc;nicas, j&aacute; que estas n&atilde;o produzem o Voto Impresso Confer&iacute;vel pelo Eleitor, este aplicativo do CMIND visa facultar a fiscaliza&ccedil;&atilde;o apenas na etapa de transmiss&atilde;o e totaliza&ccedil;&atilde;o dos BU &mdash; &uacute;nica etapa do processo eleitoral brasileiro que pode ser auditada de forma confi&aacute;vel como se explica a seguir.</p>
-<p></p>
-<p>O processo eletr&ocirc;nico de vota&ccedil;&atilde;o brasileiro &eacute; composto por tr&ecirc;s etapas:</p>
-<p></p>
-<p>1. Prepara&ccedil;&atilde;o:</p>
-<p>Abrange o per&iacute;odo de an&aacute;lise dos c&oacute;digos-fontes nas dependencias do TSE em Bras&iacute;lia seis meses antes da elei&ccedil;&atilde;o e vai at&eacute; a prepara&ccedil;&atilde;o e carga das urnas, por volta de uma semana antes da elei&ccedil;&atilde;o. Infelizmente, os procedimentos liberados pelo TSE n&atilde;o permitem uma fiscaliza&ccedil;&atilde;o eficaz, direta e independente, que determine que o software apresentado em Bras&iacute;lia &eacute; de fato o mesmo que est&aacute; carregado nas urnas eletr&ocirc;nicas.</p>
-<p></p>
-<p>2. Apura&ccedil;&atilde;o:</p>
-<p>Essa etapa abrange tudo que acontece no dia da elei&ccedil;&atilde;o entre a emiss&atilde;o da zer&eacute;sima &agrave;s 7h e a emiss&atilde;o do BU &agrave;s 17 h. (Se o software das urnas tiver sido fraudado, o BU apenas materializa a fraude).</p>
-<p></p>
-<p>3. Totaliza&ccedil;&atilde;o:</p>
-<p>Essa etapa engloba a transmiss&atilde;o dos BU para os computadores da Administra&ccedil;&atilde;o Eleitoral e sua posterior totaliza&ccedil;&atilde;o at&eacute; a publica&ccedil;&atilde;o dos resultados oficiais. &Eacute; a &uacute;nica etapa do processo eleitoral eletr&ocirc;nico que pode ser auditada de forma direta e independente e &eacute; para isso que este aplicativo foi desenvolvido.</p>
-<p></p>
-<p>&Eacute; importante sempre ter em mente que se algo malicioso acontecer nas etapas 1 e 2, as regras restritivas de auditoria impostas pelo TSE s&atilde;o insuficientes para identificar eventuais fraudes. </p>
-<p></p>
-<p>O sistema eleitoral brasileiro tem uma particularidade &iacute;mpar: &eacute; a administradora que calcula e publica o resultado eleitoral a mesma entidade que tamb&eacute;m determina as regras de fiscaliza&ccedil;&atilde;o do seu trabalho. Em outras palavras, a auditoria eleitoral &eacute; cerceada e restringida pelo auditado.</p>
-<p></p>
-<p>Exer&ccedil;a sua cidadania, fiscalize a &uacute;nica fase acess&iacute;vel aos eleitores e candidatos, e continue exigindo a prova f&iacute;sica do voto (Voto Impresso Confer&iacute;vel pelo Eleitor), como ocorre em todos os demais pa&iacute;ses que usam urnas eletr&ocirc;nicas</p>
-<p></p>
-<p></p>
-<p>CMIND:</p>
-<p>https://pt.wikipedia.org/wiki/Comit&ecirc;_Multidisciplinar_Independente</p>
-</div>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Totaliza%C3%A7%C3%A3o Paralela das Elei%C3%A7%C3%B5es 2018.jpg"></div>
 <h3 class="topic">
 <a name="480vghues9i4jv177ilpvvr2oo">&nbsp;&nbsp;- App desenvolvido por membro do CMIND</a>
 </h3>
@@ -124,6 +274,8 @@ e enviar para posterior an&aacute;lise e totaliza&ccedil;&atilde;o</a>
 <h3 class="topic">
 <a href="https://play.google.com/store/apps/details?id=br.jus.tse.BoletimNaMao" name="7q9s79p0soki4cj3accl9oeqtl">&nbsp;Boletim na M&atilde;o</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Boletim na M%C3%A3o.jpg"></div>
 <h3 class="topic">
 <a name="0hhpe47nocd7ruah0g37doekrj">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
 </h3>
@@ -136,6 +288,8 @@ e enviar para posterior an&aacute;lise e totaliza&ccedil;&atilde;o</a>
 <h3 class="topic">
 <a href="https://play.google.com/store/apps/details?id=br.jus.trees.pardalmobile" name="3pscckvuskp758ak109783b6el">&nbsp;Pardal</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Pardal.jpg"></div>
 <h3 class="topic">
 <a name="2eibknh3ov9btg1dkdv7r2s81b">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
 </h3>
@@ -151,6 +305,8 @@ e enviar para posterior an&aacute;lise e totaliza&ccedil;&atilde;o</a>
 <h3 class="topic">
 <a href="https://play.google.com/store/apps/details?id=br.jus.tse.resultados" name="1icffnth3abrtfqsfdq204eu5b">&nbsp;Resultados</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Resultados.jpg"></div>
 <h3 class="topic">
 <a name="0t46ak04ne40heclk1m7hfl65i">&nbsp;&nbsp;- App desenvolvido pela Justi&ccedil;a Eleitoral</a>
 </h3>
@@ -163,12 +319,18 @@ e enviar para posterior an&aacute;lise e totaliza&ccedil;&atilde;o</a>
 <h2 class="topic">
 <a name="304ssglk8fm11154o7kesmmph1">Recursos Auxiliares</a>
 </h2>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Recursos Auxiliares.jpg"></div>
 <h3 class="topic">
 <a href="https://pt.wikipedia.org/wiki/Comit%C3%AA_Multidisciplinar_Independente" name="6sutrf1qdd8vftnc6jk8hje5s7">&nbsp;CMIND</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/CMIND.jpg"></div>
 <h3 class="topic">
 <a name="5862pp87umfi7ajhst8rfuh6ue">&nbsp;&nbsp;Relat&oacute;rios</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Relat%C3%B3rios.jpg"></div>
 <h3 class="topic">
 <a href="http://www.brunazo.eng.br/voto-e/textos//CMind-1-Brasil-2010.htm" name="4l7vlbmk17vf9d61j1arl0fi49">&nbsp;&nbsp;&nbsp;- 1&ordm; Relat&oacute;rio CMind sobre o Sistema&#13;
 Brasileiro de Vota&ccedil;&atilde;o Eletr&ocirc;nica - 2010</a>
@@ -184,24 +346,29 @@ Eletr&ocirc;nica no Equador em 2014</a>
 <h3 class="topic">
 <a name="6q3c81i9370876qa7qlb2qjk8l">&nbsp;TSE</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/TSE.jpg"></div>
 <h3 class="topic">
 <a name="1qpeiq8mv66ltaghmjl9geus56">&nbsp;&nbsp;Documentos T&eacute;cnicos</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Documentos T%C3%A9cnicos.jpg"></div>
 <h3 class="topic">
 <a href="http://www.tse.jus.br/eleicoes/eleicoes-2018/qr-code-no-boletim-de-urna-manual-para-criacao-de-aplicativos-de-leitura" name="3rt38971nfg3684ij3ent948gk">&nbsp;&nbsp;&nbsp;- QR Code no Boletim de Urna: manual para cria&ccedil;&atilde;o de aplicativos de leitura</a>
 </h3>
 <h3 class="topic">
 <a href="http://www.tse.jus.br/eleicoes/urna-eletronica/seguranca-da-urna/hash/resumos-digitais-hashes-das-eleicoes-2018-1o-turno" name="504evkt5kjdjr9kkvr93d39dtk">&nbsp;&nbsp;&nbsp;- Resumos digitais (hashes) das Elei&ccedil;&otilde;es 2018 &ndash; 1&ordm; e 2&ordm; turnos</a>
 </h3>
-<div class="notesContainer">
-<p>Os resumos digitais (hashes) t&ecirc;m rela&ccedil;&atilde;o direta com a seguran&ccedil;a do processo eleitoral e s&atilde;o gerados a cada elei&ccedil;&atilde;o, na cerim&ocirc;nia de lacra&ccedil;&atilde;o dos sistemas, realizada no TSE. Eles possibilitam aos partidos pol&iacute;ticos e ao Minist&eacute;rio P&uacute;blico verificar se os arquivos encontrados em qualquer urna do pa&iacute;s correspondem aos arquivos lacrados no TSE.</p>
-</div>
 <h3 class="topic">
 <a name="2io9ajre0j6jjv830ed87khol7">&nbsp;&nbsp;Resolu&ccedil;&otilde;es</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Resolu%C3%A7%C3%B5es.jpg"></div>
 <h3 class="topic">
 <a href="http://www.tse.jus.br/legislacao-tse/res/2017/RES235542017.html" name="3df9moaacmr1vpn1u603n92f6u">&nbsp;&nbsp;&nbsp;RESOLU&Ccedil;&Atilde;O N&ordm; 23.554, DE 18 DE DEZEMBRO DE 2017</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/RESOLU%C3%87%C3%83O N%C2%BA 23.554, DE 18 DE DEZEMBRO DE 2017.jpg"></div>
 <h3 class="topic">
 <a name="09ssr0vfisq5a7v4fpf8v9p23n">&nbsp;&nbsp;&nbsp;&nbsp;- Disp&otilde;e sobre os atos preparat&oacute;rios para as Elei&ccedil;&otilde;es 2018.</a>
 </h3>
@@ -211,6 +378,8 @@ Eletr&ocirc;nica no Equador em 2014</a>
 <h3 class="topic">
 <a href="http://www.tse.jus.br/legislacao-tse/res/2017/RES235502017.html" name="2ebhi2b1jk2aloiff0nth50kdo">&nbsp;&nbsp;&nbsp;RESOLU&Ccedil;&Atilde;O N&ordm; 23.550, DE 18 DE DEZEMBRO DE 2017</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/RESOLU%C3%87%C3%83O N%C2%BA 23.550, DE 18 DE DEZEMBRO DE 2017.jpg"></div>
 <h3 class="topic">
 <a name="1ds5krnl6lv5p5n1rm4id9kj7n">&nbsp;&nbsp;&nbsp;&nbsp;- Disp&otilde;e sobre a cerim&ocirc;nia de assinatura digital e fiscaliza&ccedil;&atilde;o do sistema eletr&ocirc;nico de vota&ccedil;&atilde;o, do registro digital do voto, das auditorias de funcionamento das urnas eletr&ocirc;nicas e dos procedimentos de seguran&ccedil;a dos dados dos sistemas eleitorais.</a>
 </h3>
@@ -227,21 +396,29 @@ Eletr&ocirc;nica no Equador em 2014</a>
 <a name="17dbium945naqhpusv31ivn17p">&nbsp;Artigos Cient&iacute;ficos&#13;
 e Relat&oacute;rios</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Artigos Cient%C3%ADficos e Relat%C3%B3rios.jpg"></div>
 <h3 class="topic">
 <a href="https://sites.google.com/site/dfaranha/pubs/aranha-karam-miranda-scarel-12-pt" name="5kcgfakr72corspo51m0htb7h2">&nbsp;&nbsp;- (In)seguran&ccedil;a do voto eletr&ocirc;nico no Brasil / Vulnerabilidades no software da urna eletr&ocirc;nica brasileira</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/- (In)seguran%C3%A7a do voto eletr%C3%B4nico no Brasil   Vulnerabilidades no software da urna eletr%C3%B4nica brasileira.jpg"></div>
 <h3 class="topic">
-<a href="eleicoes_2018_APCF_OAB_files/%C2%A0%C2%A0%C2%A013775-1442-5-30.pdf" name="01sep4iua41mgqea8stkdsijm0">&nbsp;&nbsp;&nbsp;13775-1442-5-30.pdf</a>
+<a href="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/%C2%A0%C2%A0%C2%A013775-1442-5-30.pdf" name="01sep4iua41mgqea8stkdsijm0">&nbsp;&nbsp;&nbsp;13775-1442-5-30.pdf</a>
 </h3>
 <h3 class="topic">
 <a href="http://www.brunazo.eng.br/voto-e/arquivos/RelatorioAuditoriaEleicao2014-PSDB.pdf" name="442318qiubdhb09p492b60qah2">&nbsp;&nbsp;- Relat&oacute;rio de Auditoria Especial no Sistema Eleitoral 2014 - PSDB</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/- Relat%C3%B3rio de Auditoria Especial no Sistema Eleitoral 2014 - PSDB.jpg"></div>
 <h3 class="topic">
-<a href="eleicoes_2018_APCF_OAB_files/%C2%A0%C2%A0%C2%A0RelatorioAuditoriaEleicao2014-PSDB.pdf" name="4brnj2cflcdcq7oi04cpk7kh6i">&nbsp;&nbsp;&nbsp;RelatorioAuditoriaEleicao2014-PSDB.pdf</a>
+<a href="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/%C2%A0%C2%A0%C2%A0RelatorioAuditoriaEleicao2014-PSDB.pdf" name="4brnj2cflcdcq7oi04cpk7kh6i">&nbsp;&nbsp;&nbsp;RelatorioAuditoriaEleicao2014-PSDB.pdf</a>
 </h3>
 <h3 class="topic">
 <a name="5bud8j8lhfdlj378u40acp3kuf">&nbsp;Not&iacute;cias</a>
 </h3>
+<div class="overview">
+<img src="Elei%C3%A7%C3%B5es 2018 APCF - OAB_files/images/Not%C3%ADcias.jpg"></div>
 <h3 class="topic">
 <a href="http://www.brunazo.eng.br/voto-e/" name="12l181v0e345oscnlta097hkjk">&nbsp;&nbsp;- F&oacute;rum do Voto Eletr&ocirc;nico</a>
 </h3>
