@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <script type="text/javascript">
+		  (function(l) {
+			  if (l.search[1] === '/' ) {
+				  const decoded = l.search.slice(1).split('&').map(function(s) {
+					  return s.replace(/~and~/g, '&')
+				  }).join('?');
+				  window.history.replaceState(null, null,
+					  l.pathname.slice(0, -1) + decoded + l.hash
+				  );
+			  }
+		  }(window.location))
+	  </script>
+  </head>
+  <body class="theme-dark mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-ribbon show-view-header" style="--zoom-factor: 0.6145341380123985; --font-text-size: 16px;">
+    <div id="root" class="app-container"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>

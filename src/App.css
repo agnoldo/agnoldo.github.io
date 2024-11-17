@@ -1,0 +1,24 @@
+.loading-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(161, 161, 161, 0.93);
+  font-size: 40px;
+  user-select: none;
+  color: inherit;
+}
+
+.d-none {
+  display: none;
+}
+
+.metadata-container input, .metadata-container span {
+  user-select: none;
+  pointer-events: none;
+}
+
+.metadata-container * {
+  user-select: none;
+}
