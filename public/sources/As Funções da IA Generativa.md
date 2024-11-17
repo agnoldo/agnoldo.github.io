@@ -1,5 +1,3 @@
-# As Funções da IA Generativa
-
 **Autor**: [Arnaldo Gomes](https://linkedin.com/in/agnoldo)
 **Publicado em**: 2024-11-16
 **Atualizado em**: 2024-11-16
